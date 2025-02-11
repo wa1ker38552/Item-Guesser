@@ -1,0 +1,31 @@
+body {
+    font-family: "Roboto";
+}
+
+input {
+    border-radius: 0;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.content {
+    width: 30rem;
+}
+
+
+.navigation {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+}
+
+.vertical-conatiner {
+    gap: 1rem;
+}
+
+.final-score {
+    font-size: 3rem;
+}
