@@ -80,4 +80,4 @@ def api_validate():
             }
     return {'success': False}
 
-socket.run(app, host='0.0.0.0', port=5006, debug=True)
+socket.run(app, host='0.0.0.0', port=5006, allow_unsafe_werkzeug=True)
