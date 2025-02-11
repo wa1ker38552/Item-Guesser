@@ -1,3 +1,4 @@
 :root {
-    
+    --gamemode-time: rgba(0, 213, 255, 0.5);
+    --gamemode-sprint: rgba(97, 255, 97, 0.5);
 }

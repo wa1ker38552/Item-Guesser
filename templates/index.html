@@ -10,25 +10,40 @@
         <link rel="stylesheet" href="/static/style.css">
         <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
         <script src="https://lib.reklaw.dev/lib.js"></script>
-        <script src="/static/index.js"></script>
+        <script src="/static/scripts/gamemode_30s.js"></script>
     </head>
     <body class="centered-children">
         <div class="navigation centered-vertically">
-            <h2>Item Guesser</h2>
+            <a href="/" class="title"><h2>Item Guesser</h2></a>
         </div>
-        <div class="content">
-            <div class="vertical-container" id="gameContainer">
-                <div>
-                    <h1>Score: <span id="gameScore">0</span></h1>
-                    <h2 id="gameTimer">30</h2>
-                </div>
-                <div class="centered-children" style="width: 100%">
-                    <img id="gameImage">
-                </div>
-                <div>
-                    <input id="gameInput" autocomplete="off" spellcheck="false" placeholder="Guess">
-                    <div class="label" id="gameSimilarity">&#8203;</div>
-                </div>
+        <div class="content" style="width: 35rem">
+            <h2>Game Modes</h2>
+            <br>
+            <div class="game-mode-container">
+                <a href="/game/15s" class="game-mode-button gamemode-time">
+                    <img src="/static/assets/icon_timer.png">
+                    <h2>15 Seconds</h2>
+                </a>
+                <a href="/game/30s" class="game-mode-button gamemode-time">
+                    <img src="/static/assets/icon_timer.png">
+                    <h2>30 Seconds</h2>
+                </a>
+                <a href="/game/60s" class="game-mode-button  gamemode-time">
+                    <img src="/static/assets/icon_timer.png">
+                    <h2>60 Seconds</h2>
+                </a>
+                <a href="/game/sprint5" class="game-mode-button  gamemode-sprint">
+                    <img src="/static/assets/icon_sprint.png">
+                    <h2>Sprint 5</h2>
+                </a>
+                <a href="/game/sprint10" class="game-mode-button  gamemode-sprint">
+                    <img src="/static/assets/icon_sprint.png">
+                    <h2>Sprint 10</h2>
+                </a>
+                <a href="/game/sprint20" class="game-mode-button  gamemode-sprint">
+                    <img src="/static/assets/icon_sprint.png">
+                    <h2>Sprint 20</h2>
+                </a>
             </div>
         </div>
     </body>

@@ -16,6 +16,30 @@ index = {}
 def app_index():
     return render_template('index.html')
 
+@app.route('/game/15s')
+def app_game_15s():
+    return render_template('gamemode_time.html', time=15)
+
+@app.route('/game/30s')
+def app_game_30s():
+    return render_template('gamemode_time.html', time=30)
+
+@app.route('/game/60s')
+def app_game_60s():
+    return render_template('gamemode_time.html', time=60)
+
+@app.route('/game/sprint5')
+def app_game_sprint5():
+    return render_template('gamemode_sprint.html', amount=5)
+
+@app.route('/game/sprint10')
+def app_game_sprint10():
+    return render_template('gamemode_sprint.html', amount=10)
+
+@app.route('/game/sprint20')
+def app_game_sprint20():
+    return render_template('gamemode_sprint.html', amount=20)
+
 @app.route('/api/new')
 def api_new():
     item = random.choice(nouns)

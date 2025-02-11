@@ -9,6 +9,11 @@ input {
     font-family: "Roboto";
 }
 
+.title {
+    color: black;
+    text-decoration: none;
+}
+
 .content {
     width: 30rem;
 }
@@ -28,4 +33,60 @@ input {
 
 .final-score {
     font-size: 3rem;
+}
+
+.game-mode-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.game-mode-button {
+    position: relative;
+    border: solid 2px var(--gamemode-time);
+    display: block;
+    box-sizing: border-box;
+    width: fit-content;
+    background: linear-gradient(135deg, var(--gamemode-time), transparent);
+    overflow: hidden;
+    padding: 2rem 1rem;
+}
+
+.game-mode-button:hover {
+    border-color: black;
+}
+
+.game-mode-button img {
+    width: 100%;
+    filter: brightness(0) opacity(0.1);
+}
+
+.game-mode-button h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    background: linear-gradient(transparent, var(--gamemode-time));
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.gamemode-time {
+    border: solid 2px var(--gamemode-time);
+    background: linear-gradient(135deg, var(--gamemode-time), transparent);
+}
+
+.gamemode-time h2 {
+    background: linear-gradient(transparent, var(--gamemode-time));
+}
+
+
+.gamemode-sprint {
+    border: solid 2px var(--gamemode-sprint);
+    background: linear-gradient(135deg, var(--gamemode-sprint), transparent);
+}
+
+.gamemode-sprint h2 {
+    background: linear-gradient(transparent, var(--gamemode-sprint));
 }
